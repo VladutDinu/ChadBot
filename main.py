@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import music
+import rps
 import os
 token = ''
 with open('config.env', 'r') as conf:
@@ -8,8 +9,7 @@ with open('config.env', 'r') as conf:
 client=commands.Bot(command_prefix="$", intents=discord.Intents.all())
 
 
-
-cogs=[music]
+cogs=[music, rps]
 
 for i in range(len(cogs)):
     cogs[i].setup(client)

@@ -49,7 +49,9 @@ class music(commands.Cog):
         await ctx.send('CHAD WILL RESUME WHENEVER HE WANTS.')
         time.sleep(random.randint(3,7))
         await ctx.voice_client.resume()
-        await ctx.send('CHAD WILL CONTINUE THE SONG') 
+        await ctx.send('CHAD WILL CONTINUE THE SONG')
+    
+       
 
 def setup(client):
     client.add_cog(music(client))
