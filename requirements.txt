@@ -4,3 +4,7 @@ PyNaCl
 ffmpeg-python
 python-ffmpeg
 ffmpeg
+matplotlib
+tensorflow
+keras
+xlrd
