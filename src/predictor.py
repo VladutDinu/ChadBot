@@ -10,7 +10,7 @@ class predictor(commands.Cog):
     def __init__(self, client):
         self.client = client
         self.window_size = 7
-        self.model = tf.keras.models.load_model('../model_training/model/temp')
+        self.model = tf.keras.models.load_model('./model_training/model/temp')
 
     @commands.command()
     async def predict(self, ctx, array):
